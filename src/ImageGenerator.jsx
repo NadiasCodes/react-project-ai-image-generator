@@ -19,8 +19,7 @@ function ImageGenerator() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-            "Bearer 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",
+          Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
           "User-Agent": "Chrome",
         },
         body: JSON.stringify({
