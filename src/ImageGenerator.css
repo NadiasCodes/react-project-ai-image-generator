@@ -1,0 +1,190 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Responsive */
+
+
+
+
+
+body {
+  background-color: #6f7276;
+  color: black;
+   font-family: "Poppins", sans-serif;
+}
+
+.ai-image-generator {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  gap: 30px;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-inline: auto;
+}
+
+.header {
+  font-size: 70px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.header span {
+  color: #b29d8c;
+}
+
+.img-loading {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-loading img {
+  width: 510px;
+}
+
+.search-box {
+  display: flex;
+  width: 1000px;
+  height: 95px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 5px;
+  background: #3c3f42;
+}
+
+.search-input {
+  width: 600px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #8a8581;
+  padding-left: 35px;
+  margin-right: 3;
+  border-radius: 30px;
+}
+
+input::placeholder {
+  color: #8a8581;
+}
+.generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 100px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 3px solid #b29d8c;
+  background-color: rgba(213, 205, 205, 0.352);
+  cursor: pointer;
+ 
+  color: #e0d2c6;
+  transition: all 400ms ease-in-out;
+}
+
+.generate-btn:hover {
+  background-color: #c0bcb9;
+  border: 3px solid #b29d8c;
+  color: black;
+}
+
+.loading-bar {
+  width: 0px;
+  height: 8px;
+  background: #b29d8c;
+}
+
+.loading-text {
+  font-size: 20px;
+  
+}
+
+.loading-bar-full {
+  width: 510px;
+  display: inline-block;
+  height: 8px;
+  background: #b29d8c;
+  transition: 15s;
+}
+.display-none {
+  display: none;
+}
